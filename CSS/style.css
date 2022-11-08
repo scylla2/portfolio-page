@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin';
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0px;
+}
+nav ul li a:after{
+     content:"";
+     position: absolute;
+     left: 0;
+     width: 0;
+     height: 3px;
+     background: #fd4766;
+     transition: 3s;
+     bottom: 0;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.image{
+    width: 30%;
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    image-resolution: 200px 200px;
+}
+.btn{
+     color: #fff;
+     font-size: 16px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     padding: 16px 40px;
+     border-radius: 400px;
+     display: inline-block;
+     font-weight: 500;
+     transition: all .4s ease-in-out;
+     background-size: 152% 100%;
+     background: #fd4766;
+     border: 2px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766;
+}
+.hero-content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.hero-content.title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: linear-gradient(120eg, #1c99fe 20.69% #7644ff 50.19% #fd4766b79.69%)
+}
+.hero-content h1{
+    color:#1f1f25;
+    font-size: 70px;
+    line-height:90px;
+    font-weight: 900;
+     text-transform: inherit;
+     width: 70%;
+     justify-self: center;
+}
+.hero-content h1 span{
+    color: #fd4766;
+}
+.hero-content p{
+    width: 55%;
+    color; #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
